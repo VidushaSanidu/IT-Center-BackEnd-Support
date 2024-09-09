@@ -8,7 +8,7 @@ import {
 } from 'class-validator';
 import { CreateProfileDto } from 'src/profile/dto/create-profile.dto';
 
-// bavantha
+// tharaka
 export class CreateStaffProfileDto extends CreateProfileDto {
   @IsNotEmpty()
   @IsString()

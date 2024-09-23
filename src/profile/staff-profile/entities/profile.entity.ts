@@ -1,4 +1,4 @@
-import { Profile } from 'src/profile/entities/profile.entity';
+import { Profile } from 'src/profile/entity/profile.entity';
 import { Column, Entity, OneToMany, OneToOne } from 'typeorm';
 import { Email } from './email.entity';
 import { Telephone } from './telephone.entity';

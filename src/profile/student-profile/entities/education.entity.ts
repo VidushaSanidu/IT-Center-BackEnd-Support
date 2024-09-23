@@ -40,7 +40,7 @@ export class Education {
   @BeforeInsert()
   validateResults() {
     if (this.aLevelResults.length > 4) {
-      throw new BadRequestException('Maximum 4 A/L results are required.'); // here small update @jayaruwan00
+      throw new BadRequestException('Exactly 4 A/L results are required.');
     }
   }
 }

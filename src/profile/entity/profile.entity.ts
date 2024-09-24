@@ -6,4 +6,7 @@ export abstract class Profile {
 
   @Column()
   displayName: string;
+
+  @Column({ default: false })
+  isApproved: boolean;
 }

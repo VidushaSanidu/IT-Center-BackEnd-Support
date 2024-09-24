@@ -92,6 +92,14 @@ export class StaffProfileService {
     return this.staffProfileRepository.save(profile);
   }
 
+  // Method to update the isApproved field
+  async approveProfile(id: string, isApproved: boolean): Promise<StaffProfile> {
+    const profile = await this.findOne(id);
+
+    profile.isApproved = isApproved; // Update the isApproved field
+    return this.staffProfileRepository.save(profile); // Save changes to the database
+  }
+
   // Delete a staff profile by ID
   async remove(id: string): Promise<void> {
     await this.staffProfileRepository.delete(id);
